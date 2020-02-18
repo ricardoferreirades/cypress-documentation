@@ -169,6 +169,14 @@ This overrides the default auto-positioning based on the element itself. Useful 
 cy.get('button').trigger('mousemove', { clientX: 200, clientY: 300 })
 ```
 
+## Keyboard Events
+To run keyboard events, you must specify the `event name`, the `key` name and the `code` that represents the key pressed.
+This triggers a keyup event on the keyboard up navigation key.
+
+```javascript
+cy.get('targetElement').trigger('keyup', { key: 'ArrowUp', code: 'ArrowUp' });
+```
+
 # Notes
 
 ## Actionability
